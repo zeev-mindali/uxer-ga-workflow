@@ -7,11 +7,11 @@ on:
 jobs:
   myFirstJob:
     runs-on: ubuntu-latest
-      steps:
-        - name: my First Step
-          run: printenv
-        - name:
-          run: |
-            echo "Zeev Mindali"
-            echo "Hello" > file.txt
-            ls
+    steps:
+      - name: my First Step
+        run: printenv
+      - name:
+        run: |
+          echo "Zeev Mindali"
+          echo "Hello" > file.txt
+          ls
