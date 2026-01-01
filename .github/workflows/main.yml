@@ -8,6 +8,8 @@ jobs:
   myFirstJob:
     runs-on: ubuntu-latest
     steps:
+      - name: my first action
+        uses: actions/checkout@v6
       - name: my First Step
         run: printenv
       - name: my Second step
@@ -18,8 +20,6 @@ jobs:
           cat file.txt
       - name: sleeping sleep
         run: sleep 5
-      - name: my first action
-        uses: actions/checkout@v6
       - name: ls repo
         run: |
           ls
