@@ -1,0 +1,17 @@
+name: My First WorkFlow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  myFirstJob:
+    runs-on: ubuntu-latest
+      steps:
+        - name: my First Step
+          run: printenv
+        - name:
+          run: |
+            echo "Zeev Mindali"
+            echo "Hello" > file.txt
+            ls
